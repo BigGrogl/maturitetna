@@ -2,9 +2,9 @@ import java.util.*;
 public class Main {
     public static void main(String[] args){
         
-        
+        int Key = KeyGen();
 
-        System.out.println(Key);
+       System.out.println(KeyGen());
 
     }
 
@@ -29,6 +29,7 @@ public class Main {
                 d4 = r.nextInt(9);
             }
         }   
-        System.out.println(d1+""+d2+""+d3+""+d4);
+        int Key = d1*1000+d2*100+d3*10+d4;
+        return Key;
             }
 }
