@@ -1,6 +1,6 @@
 import java.util.*;
 public class KeyGen {
-    public static int KeyGen(){
+    public static int KeyGenerator(){
         Random r = new Random();
         int d1 = r.nextInt(9);
         int d2 = r.nextInt(9);
