@@ -4,6 +4,7 @@ public class Main {
         int Key = KeyGen.KeyGenerator();
 
        System.out.println(Key);
+       Shifter.ArrShift();
 
     }
 }
