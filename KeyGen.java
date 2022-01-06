@@ -1,26 +1,27 @@
 import java.util.*;
 public class KeyGen {
-    public static int KeyGenerator(){
+    public static int KeyGen1(){
         Random r = new Random();
-        int key1 = r.nextInt(9);
-        int key2 = r.nextInt(9);
-        int key3 = r.nextInt(9);
-        while(key1==key2||key1==key3||key2==key3)
-        {
-            if(key1==0){
-                key1 = r.nextInt(9);
-            }
-            if(key1==key2||key2==key3||key2==0)
-            {
-                key2 = r.nextInt(9);
-            }
-            if(key1==key3||key2==key3||key3==0)
-            {
-                key3 = r.nextInt(9);
-            }
-           
-        }   
-        int Key = key1*1000+key2*100+key3*10;
+        int key1 = r.nextInt(22);
+        while(key1==0){
+            key1 = r.nextInt(22);
+        }
         return key1;
-            }
+    }
+    public static int KeyGen2(){
+        Random r = new Random();
+        int key2 = r.nextInt(22);
+        while(key2==0){
+            key2 = r.nextInt(22);
+        }
+        return key2;
+    }
+    public static int KeyGen3(){
+        Random r = new Random();
+        int key3 = r.nextInt(22);
+        while(key3==0){
+            key3 = r.nextInt(22);
+        }
+        return key3;
+    }
 }
