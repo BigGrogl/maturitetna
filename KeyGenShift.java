@@ -42,13 +42,13 @@ public class KeyGenShift {
 
     }
     //KEY GEN
-    public static int KeyGen(int douzina){
+    public static int KeyGen(int X){
         Random r = new Random();
-        int key1 = r.nextInt(douzina);
-        while(key1==0){
-            key1 = r.nextInt(douzina);
+        int key = r.nextInt(X);
+        while(key==0){
+            key = r.nextInt(X);
         }
-        return key1;
+        return key;
     }
 
     public static char[] Shifter (char tabela[], int key){
@@ -64,5 +64,4 @@ public class KeyGenShift {
 
         return tabela;
     }
-
 }
