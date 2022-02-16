@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.io.*;
-import javafx.print.PageLayout;
+
+//import javafx.event.ActionEvent;
+//import javafx.print.PageLayout;
 
 public class GUI {
     public static void main(String[] args) {
@@ -12,6 +14,8 @@ public class GUI {
         JButton buttonEncode = new JButton("Encode");
         JButton buttonDecode = new JButton("Decode");
 
+       //buttonEncode.addActionListener(l);
+
        /* frame.getContentPane().add(buttonEncode);
         frame.getContentPane().add(buttonDecode);
         frame.setVisible(true);*/
@@ -20,7 +24,7 @@ public class GUI {
         panel.add(buttonEncode);
         panel.add(buttonDecode);
 
-        JPanel panelDown = new JPanel();
+       // JPanel panelDown = new JPanel();
         
 
         JFileChooser fileChooser = new JFileChooser();
