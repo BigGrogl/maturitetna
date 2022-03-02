@@ -1,10 +1,6 @@
-import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import java.awt.*;
+/*import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
-import java.nio.file.Path;
 
 class Events implements ActionListener {
 
@@ -55,13 +51,13 @@ class Events implements ActionListener {
     }
 
     public String fileChooser(){
+        chooser.getExtensionFilters().addAll
         int result = chooser.showOpenDialog(button1);
-        File selectedFile;
-        String filePath;
         if(result == JFileChooser.APPROVE_OPTION){
-            selectedFile = chooser.getSelectedFile();
+            File selectedFile = chooser.getSelectedFile();
             System.out.println("Selected file: " + selectedFile.getAbsolutePath());
-            filePath = selectedFile.getAbsolutePath();
+            String filePath = selectedFile.getAbsolutePath();
+            return filePath;
         }
         return null;
     }
@@ -73,4 +69,4 @@ public class GUI {
     {
         new Events();
     }
-}
+}*/
