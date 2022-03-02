@@ -58,9 +58,10 @@ public class KeyGenShift {
             }
         }
         //encode string arr into first encode
+        char startChar = roll1[0];
+        System.out.println(startChar);
         for(int i = 0; i < str.length();i++){
             encoded[i] = roll1[index[i]];
-            for(int k = 0; k < Key1; k++){
                 char temp1 = roll1[0];
                 int j;
                 for(j = 0; j < roll1.length-1; j++){
@@ -68,7 +69,10 @@ public class KeyGenShift {
                 }
                     roll1[j]=temp1;
             }
+        for(int i = 0; i < encoded.length; i++){
+            System.out.printf("%c", encoded[i]);
         }
+
     }
 
     
