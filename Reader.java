@@ -49,4 +49,16 @@ public class Reader {
         return data;
     }
 
+    public static Boolean TempRead(){
+      Scanner bralnik = new Scanner(System.in);
+      System.out.printf("ENCODE? (y/n)%n");
+      String yesno = bralnik.nextLine();
+      Boolean encodePogoj=false;
+      if(yesno=="y"){
+      encodePogoj=true;
+      }
+      bralnik.close();
+      return encodePogoj;
+    }
+
 }
