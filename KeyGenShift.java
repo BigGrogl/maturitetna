@@ -25,6 +25,19 @@ public class KeyGenShift {
 
     }
 
+    
+
+
+    //KEY GEN
+    public static int KeyGen(int X){
+        Random r = new Random();
+        int key = r.nextInt(X);
+        while(key==0){
+            key = r.nextInt(X);
+        }
+        return key;
+    }
+
     //cipher
     public static char[] encode(int key){
         final char[] cleanArr = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','Z',' ','!','"','?','.',',','(',')'};
@@ -38,16 +51,5 @@ public class KeyGenShift {
                 cipher[i]=temp;
             }
         return cipher;
-    }
-
-
-    //KEY GEN
-    public static int KeyGen(int X){
-        Random r = new Random();
-        int key = r.nextInt(X);
-        while(key==0){
-            key = r.nextInt(X);
-        }
-        return key;
     }
 }
