@@ -5,13 +5,9 @@ public class KeyGenShift {
     public static void main(String[] args){
 
         int constanta = 52;
-        int[] Key = new int[3];
-        for(int i = 0; i < 2; i++){
-            Key[i] = KeyGen(constanta);
-        }
+        
 
         System.out.printf("%d%n%n", constanta);
-        System.out.printf("%d %d %d%n", Key[0],Key[1],Key[2]);
 
     }
 
@@ -26,7 +22,6 @@ public class KeyGenShift {
         for (int i = 0; i < str.length(); i++) {
             stringChar[i] = str.charAt(i);
         }
-
         return stringChar;
     }
 
@@ -54,4 +49,20 @@ public class KeyGenShift {
             }
         return cipher;
     }
+
+    public static int[] index(String input){
+        final char[] cleanArr = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','Z',' ','!','"','?','.',',','(',')'};
+        int[] index = new int[input.length()];
+        for(int i = 0; i < input.length();i++){
+            for(int j = 0; j < cleanArr.length; j++){
+                if(input.charAt(i) == cleanArr[j]){
+                    index[i] = j;
+                }
+            }
+        }
+
+
+        return index;
+    }
+
 }
